@@ -5,6 +5,9 @@ from typing import List, Optional
 import os
 from dotenv import load_dotenv
 
+import nltk_setup  # This will auto-trigger the download
+
+
 from app.modules.document_processor import extract_text
 from app.modules.text_chunker import chunk_text
 from app.modules.embedder import get_embeddings_in_parallel, get_embedding
@@ -86,6 +89,7 @@ async def run_hackrx(request: Request, data: QueryRequest, authorization: Option
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("main:app", host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
+
 
 
 
