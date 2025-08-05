@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-openai
+google-generativeai
 faiss-cpu
 PyMuPDF
 python-docx
@@ -12,4 +12,5 @@ python-dotenv
 requests
 tqdm
 aiohttp
+
 
