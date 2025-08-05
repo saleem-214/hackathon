@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+openai
+faiss-cpu
+PyMuPDF
+python-docx
+extract-msg
+nltk
+tiktoken
+pydantic
+python-dotenv
+requests
+tqdm
+aiohttp
+
