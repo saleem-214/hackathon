@@ -27,6 +27,12 @@ A production-ready document-based Question-Answering (RAG) API built for the Hac
 - **Pydantic** – Data validation
 - **Render / Railway / Heroku** – Deployment (HTTPS supported)
 
+## NLTK Setup
+This app uses NLTK for sentence tokenization. Run the following once:
+```bash
+python -c "import nltk; nltk.download('punkt')"
+
+
 ---
 
 ## 📌 API Specification
