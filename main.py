@@ -14,8 +14,6 @@ from app.modules.llm import build_prompt, generate_answer
 import json
 import tempfile
 
-import nltk_setup
-
 load_dotenv()
 API_KEY = os.getenv("API_KEY", "secret")  # fallback for local
 
@@ -88,6 +86,7 @@ async def run_hackrx(request: Request, data: QueryRequest, authorization: Option
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("main:app", host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
+
 
 
 
