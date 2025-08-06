@@ -2,9 +2,9 @@ import nltk
 from nltk.tokenize import sent_tokenize
 
 # Make sure to run this once if you haven't: nltk.download('punkt')
+nltk.download("punkt")
 
 def chunk_text(text, max_chunk_size=500):
-    nltk.download('punkt', quiet=True)
     sentences = sent_tokenize(text)
     chunks = []
     chunk = ""
@@ -21,3 +21,4 @@ def chunk_text(text, max_chunk_size=500):
     
 
     return chunks
+
