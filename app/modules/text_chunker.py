@@ -2,7 +2,7 @@ import nltk
 from nltk.tokenize import sent_tokenize
 
 # Make sure to run this once if you haven't: nltk.download('punkt')
-nltk.download("punkt")
+nltk.download("punkt_tab")
 
 def chunk_text(text, max_chunk_size=500):
     sentences = sent_tokenize(text)
@@ -21,4 +21,5 @@ def chunk_text(text, max_chunk_size=500):
     
 
     return chunks
+
 
